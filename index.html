@@ -19,7 +19,7 @@ body {
 .header {
   padding: 280px;
   text-align: center;
-  background: #1abc9c;
+  background: #04358a;
   color: white;
 }
 
@@ -66,9 +66,11 @@ body {
 
 /* Fake image, just for this example */
 .fakeimg {
-  background-color: #aaa;
+  background-color: rgb(235, 233, 233);
   width: 100%;
-  padding: 20px;
+  padding: 2px;
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
 /* Footer */
@@ -84,14 +86,45 @@ body {
     flex-direction: column;
   }
 }
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(247, 244, 247, 0.8);
+  padding: 5px;
+  width: 250px;
+  height: 200px;
+  font-size: 10px;
+  text-align: center;
+  margin: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.grid-items {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(247, 244, 247, 0.8);
+  padding: 5px;
+  width: 150px;
+  height: 100px;
+  font-size: 10px;
+  text-align: center;
+  margin: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.center { text-align:center; }
 </style>
 </head>
 <body>
 
 <!-- Note -->
-<div style="background:yellow;padding:5px">
-  <h4 style="text-align:center">Resize the browser window to see the responsive effect.</h4>
-</div>
+
 
 <!-- Header -->
 <div class="header">
@@ -108,31 +141,42 @@ body {
 </div>
 
 <!-- The flexible grid (content) -->
-<div class="row">
-  <div class="side">
-    <h2>About Me</h2>
-    <h5>Photo of me:</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-    <h3>More Text</h3>
-    <p>Lorem ipsum dolor sit ame.</p>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div>
+<div class="main">
+
+    <h2 class="center">TITLE HEADING</h2>
+  
+   <p>
+    Sunt in culpa qui officia deserunt mollit anim id 
+    est laborum consectetur adipiscing elit, sed do eiusmod tempor 
+    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+    quis nostrud exercitation ullamco.
+</p>
+
+    <div class="grid-container">
+  <div class="grid-item">
+  unt in culpa qui officia deserunt mollit anim id est laborum consectetur</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div> 
+
+
   </div>
   <div class="main">
-    <h2>TITLE HEADING</h2>
+    <h2 class="center">TITLE HEADING</h2>
     <h5>Title description, Dec 7, 2017</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
+    <div class="fakeimg" style="height:450px;">
+    
+    <div class="grid-items">4</div>
+    <div class="grid-items">5</div>
+    <div class="grid-items">6</div>
+    <div class="grid-items">7</div>
+    <div class="grid-items">8</div>
+    <div class="grid-items">9</div>
+    
+    </div>
     <p>Some text..</p>
     <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     <br>
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Sep 2, 2017</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-  </div>
+    </div>
 </div>
 
 <!-- Footer -->
