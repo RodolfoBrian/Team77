@@ -15,9 +15,7 @@ h1 {
     
 }
 
-.logo {
 
-}
 
 .figma {
     background-color: #4c85f0;
@@ -35,14 +33,15 @@ h1 {
 }
 
 .figma:hover {
-    background-color: #4c85f0;
+    background-color: #145ce2;
     color: #fff;
-
+    transition: 0.5s;
 }
 
 .documentation:hover {
-    background-color: #4c85f0;
+    background-color: #145ce2;
     color: #fff;
+    transition: 0.5s;
 }
 .documentation {
     background-color: #4c85f0;
@@ -64,26 +63,119 @@ h1 {
     font-size: 24px;
 }
 
-.dowload {
-    background-color: #fdcc52;
-    height: 500px;
-    width: 100%;
-
-    align-items: center;
+section {
+    background: url(../img/bg-pattern.png),linear-gradient(to left,#7b4397,#dc2430);
 }
 
-.dowload h2 {
+
+
+/* REFACTOR */
+
+@import url('https://fonts.googleapis.com/css?family=Coming+Soon|Open+Sans&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+/* Layout */
+
+.herotop {
+    margin: 50px;
+    font-size: 18px;
+}
+
+.banner {
+    align-items: center;
     text-align: center;
-    font-size: 70px;
+    height: 100px;
+    margin: 80px;
+}
+
+.banner img {
+    height: 100px;
+}
+
+.HeroTitle {
+    font-size: 80px;
+    font-family: 'Coming Soon', cursive;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    color: #191a1b;
     
 }
 
-.notes {
-    background:#fd5e60;
-    padding:5px;
-    height: 30px;
-    color: #fff;
-    text-align:center;
-    font-size: 10;
-    text-transform: uppercase;
+.HeroSub {
+    font-size: 18px;
+    line-height: 28px;
+    color: #494c4e;
+    margin: 10px;
 }
+
+.Heronav li{
+    list-style: none;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #191a1b;
+    font-weight: 400;
+}
+
+.team {
+    background-color: #fafafa;
+    text-align: center;
+    padding-top: 27px;
+    margin-top: 40px;
+}
+
+
+}
+
+.team h1 {
+    font-size: 18px;
+    color: #0096FF;
+    text-transform: uppercase;
+    padding: 16px;
+
+}
+
+.team li {
+    display: inline;
+    
+}
+
+.HeroAvatar {
+    border-radius: 50%;
+}
+
+.team img {
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.resource {
+    background-color: #506cf0;
+    height: 100px;
+}
+/* HELPS  UBUNTU*/
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.icon {
+    margin: 10px;
+}
+
