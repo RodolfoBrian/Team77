@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<title>Americana Pontos</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="vendor/style.css" rel="stylesheet" type="text/css">
 <style>
 * {
   box-sizing: border-box;
@@ -65,12 +66,12 @@ body {
 }
 
 /* Fake image, just for this example */
-.fakeimg {
+.box {
   background-color: rgb(235, 233, 233);
   width: 100%;
   padding: 2px;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 160px 160px 0px;
 }
 
 /* Footer */
@@ -90,7 +91,7 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 280px 280px 200px;
   
   padding: 10px;
 }
@@ -103,7 +104,7 @@ body {
   font-size: 10px;
   text-align: center;
   margin: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 .grid-items {
@@ -119,6 +120,7 @@ body {
 }
 
 .center { text-align:center; }
+
 </style>
 </head>
 <body>
@@ -128,29 +130,29 @@ body {
 
 <!-- Header -->
 <div class="header">
-  <h1>America Pontos</h1>
-  <p>With a <b>flexible</b> layout.</p>
+  <img src="./vendor/Logo_Black.png" alt="" class="logo">
+  <h1 class="textTitle">Apresentando Americanas Pontos</h1>
+  <h2 class="textSub">Um produto do Universo Americanas</h2>
+
+  <button class="figma">Veja o Prototipo</button>
+  <button class="documentation">Veja a Documentação</button>
 </div>
 
-<!-- Navigation Bar -->
-<div class="navbar">
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-</div>
+
+
+
 
 <!-- The flexible grid (content) -->
 <div class="main">
-
-    <h2 class="center">TITLE HEADING</h2>
+  
+    <h2 class="center">Nossos Produtos</h2>
   
    <p>
-    Sunt in culpa qui officia deserunt mollit anim id 
-    est laborum consectetur adipiscing elit, sed do eiusmod tempor 
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-    quis nostrud exercitation ullamco.
-</p>
+     Sunt in culpa qui officia deserunt mollit anim id
+     est laborum consectetur adipiscing elit, sed do eiusmod tempor
+     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+     quis nostrud exercitation ullamco.
+   </p>
 
     <div class="grid-container">
   <div class="grid-item">
@@ -161,27 +163,19 @@ body {
 
   </div>
   <div class="main">
-    <h2 class="center">TITLE HEADING</h2>
+    <h2 class="center">Nossos Produtos</h2>
     <h5>Title description, Dec 7, 2017</h5>
-    <div class="fakeimg" style="height:450px;">
-    
-    <div class="grid-items">4</div>
-    <div class="grid-items">5</div>
-    <div class="grid-items">6</div>
-    <div class="grid-items">7</div>
-    <div class="grid-items">8</div>
-    <div class="grid-items">9</div>
-    
-    </div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    <br>
-    </div>
+    <div class="row"></div>
+    <div class="box" style="height:450px;">
+
+
 </div>
+    </div>
+
 
 <!-- Footer -->
 <div class="footer">
-  <h2>Footer</h2>
+  <h2>Plataforma Desenvolvida por TIME 77</h2>
 </div>
 
 </body>
