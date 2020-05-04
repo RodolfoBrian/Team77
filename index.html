@@ -8,12 +8,16 @@
 <style>
 * {
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+ /* border: 1px solid #73ec2d; /* Testando espaço */
 }
 
 /* Style the body */
 body {
-  font-family: Arial;
-  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  
+
 }
 
 /* Header/logo Title */
@@ -26,16 +30,19 @@ body {
 
 /* Style the top navigation bar */
 .navbar {
-  display: flex;
-  background-color: #333;
+  
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
+  height: 150px;
+  padding: 5px;
 }
 
 /* Style the navigation bar links */
 .navbar a {
-  color: white;
+  color: black;
   padding: 14px 20px;
   text-decoration: none;
-  text-align: center;
 }
 
 /* Change color on hover */
@@ -76,9 +83,16 @@ body {
 
 /* Footer */
 .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   padding: 20px;
   text-align: center;
-  background: #ddd;
+  background-color: #222;
+  color: #fff;
+  font-size: 12px;
+ 
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
@@ -90,12 +104,18 @@ body {
 
 
 .grid-container {
-  display: grid;
+  display: flex;
   grid-template-columns: 280px 280px 200px;
+  padding: 0px;
+  align-items:flex-start;
+  margin: 5px;
   
-  padding: 10px;
 }
-.grid-item {
+ 
+/*
+  .grid-item {
+  position:absolute;
+  right: 50px;
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(247, 244, 247, 0.8);
   padding: 5px;
@@ -105,6 +125,17 @@ body {
   text-align: center;
   margin: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+}  */
+
+.grid-item {
+  background-color: rgba(118, 214, 243, 0.8);
+  border: 1px solid rgba(247, 244, 247, 0.8);
+  width: 250px;
+  height: 200px;
+  margin: 15px;
+  padding: 25px;
+  display: flex;
+
 }
 
 .grid-items {
@@ -125,7 +156,8 @@ body {
 </head>
 <body>
 
-<!-- Note -->
+<!-- Header -->
+
 
 
 <!-- Header -->
@@ -145,23 +177,26 @@ body {
 <!-- The flexible grid (content) -->
 <div class="main">
   
-    <h2 class="center">Nossos Produtos</h2>
-  
-   <p>
-     Sunt in culpa qui officia deserunt mollit anim id
-     est laborum consectetur adipiscing elit, sed do eiusmod tempor
-     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-     quis nostrud exercitation ullamco.
-   </p>
+    <h2 class="center title ">Nossos Produtos</h2>
 
+    <p class="center">
+      Sunt in culpa qui officia deserunt mollit anim id
+      est laborum consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco.
+    </p>
+
+    <!-- colocar lado a lado -->
     <div class="grid-container">
-  <div class="grid-item">
-  unt in culpa qui officia deserunt mollit anim id est laborum consectetur</div>
-  <div class="grid-item">2</div>
-  <div class="grid-item">3</div> 
+      <div class="grid-item">
+        <p>unt in culpa qui officia deserunt mollit anim id est laborum consectetur</p>
+      </div>
 
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
 
-  </div>
+    </div>
+
   <div class="main">
     <h2 class="center">Nossos Produtos</h2>
     <h5>Title description, Dec 7, 2017</h5>
@@ -172,10 +207,18 @@ body {
 </div>
     </div>
 
+<div class="team">
+  <p>Somos todos TEAM 77</p>
+  
+</div>
+
+
 
 <!-- Footer -->
 <div class="footer">
-  <h2>Plataforma Desenvolvida por TIME 77</h2>
+  Plataforma Desenvolvida por TIME 77<br>
+  Todos os direitos reservados
+  
 </div>
 
 </body>
