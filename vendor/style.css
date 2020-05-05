@@ -212,7 +212,7 @@ li {
 .mockup {
     float: right;
     position: absolute;
-    top: 60px;
+    top: 440px;
     right: -100px;
     transform: rotate(8deg)
 }
