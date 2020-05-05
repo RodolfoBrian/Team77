@@ -1,35 +1,129 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap');
 
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;  
+}
+
+/* Style the body */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: black
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Opens-sans', Helvetica, sans-serif;
+}
+
+/* Style the top navigation bar */
+.navbar {
+
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 0 0 1px 1px rgba(20, 23, 28, .1), 0 3px 1px 0 rgba(20, 23, 28, .1);
+    height: 150px;
+    padding: 5px;
+}
+
+/* Column container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Main column */
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+
+.box {
+    background-color: rgb(235, 233, 233);
+    width: 100%;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 160px 160px 0px;
+    margin-bottom: 250px;
+}
+
+
+/* Footer */
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    font-size: 12px;
+
+}
+
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: auto auto auto;
+    /* background-color: #2196F3; */
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .grid-item {
+      padding: 35px;
+      margin: 0 auto;
+  }
+
+.center {
+    text-align: center;
+}
+
+
 h1 {
     text-transform: uppercase;
     font-weight: bolder;
-  
-    
 }
 
 .Text_Title {
     font-size: 70px;
     text-align: center;
     font-family: 'Opens-Sans', sans-serif;
-   
-    
+
+
 }
-
-
 
 .figma {
     background-color: #4c85f0;
-  border: none;
-  color: #fff;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 50px;
-  text-transform: uppercase;text-transform: uppercase;
+    border: none;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .figma:hover {
@@ -38,11 +132,35 @@ h1 {
     transition: 0.5s;
 }
 
+.youtube {
+    background-color: #fff;
+    border: none;
+    color: rgb(19, 19, 19);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-transform: uppercase;
+}
+
+.youtube:hover {
+    background-color: #145ce2;
+    color: #fff;
+    transition: 0.5s;
+}
+
+
 .documentation:hover {
     background-color: #145ce2;
     color: #fff;
     transition: 0.5s;
 }
+
 .documentation {
     background-color: #4c85f0;
     border: none;
@@ -62,12 +180,6 @@ h1 {
     color: #5c5a68;
     font-size: 24px;
 }
-
-section {
-    background: url(../img/bg-pattern.png),linear-gradient(to left,#7b4397,#dc2430);
-}
-
-
 
 /* REFACTOR */
 
@@ -89,6 +201,35 @@ li {
 
 /* Layout */
 
+.ads {
+    margin-top: 18px;
+    background-color: #506cf0;
+    height: 550px;
+    text-align: center;
+    padding: 25px;
+}
+
+.mockup {
+    float: right;
+    position: absolute;
+    top: 400px;
+    right: -96px;
+    transform: rotate(8deg)
+}
+
+.ads h1 {
+    margin-top: 5px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.ads p {
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.6;
+}
+
+
 .herotop {
     margin: 50px;
     font-size: 18px;
@@ -104,14 +245,17 @@ li {
 .banner img {
     height: 100px;
 }
-
+img.logo {
+    align-items: center;
+    width: 100%;
+}
 .HeroTitle {
     font-size: 80px;
     font-family: 'Coming Soon', cursive;
     margin-bottom: 18px;
     text-transform: uppercase;
     color: #191a1b;
-    
+
 }
 
 .HeroSub {
@@ -121,7 +265,7 @@ li {
     margin: 10px;
 }
 
-.Heronav li{
+.Heronav li {
     list-style: none;
     display: inline-block;
     text-transform: uppercase;
@@ -136,20 +280,50 @@ li {
     margin-top: 40px;
 }
 
-
-}
-
 .team h1 {
-    font-size: 18px;
-    color: #0096FF;
+    font-size: 28px;
+    /* color: #0096FF; */
     text-transform: uppercase;
     padding: 16px;
+    
 
 }
 
 .team li {
     display: inline;
+
+}
+
+.team h2 {
+    color: #001d5f;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: Arial;
     
+}
+
+.team h3 {
+    font-size: 13px;
+    font-family: 'Opens-sans', Helvetica, sans-serif;
+    background-color: #4c85f0;
+    border: none;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-transform: uppercase;
+}
+
+.team img {
+    height: 150px;
+    width: 150px
 }
 
 .HeroAvatar {
@@ -159,12 +333,14 @@ li {
 .team img {
     border-radius: 50%;
     padding: 5px;
+
 }
 
 .resource {
     background-color: #506cf0;
     height: 100px;
 }
+
 /* HELPS  UBUNTU*/
 
 .left {
@@ -177,5 +353,12 @@ li {
 
 .icon {
     margin: 10px;
+}
+
+.avatar_row {
+    position: relative;
+    position: relative;
+    left: 308px;
+    TOP: -20px;
 }
 

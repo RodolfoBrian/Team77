@@ -1,201 +1,107 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<link rel="icon" sizes="150x150" href="./vendor/favicon.png" />
-<title>Americana Pontos</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="vendor/style.css" rel="stylesheet" type="text/css">
-<script src="https://kit.fontawesome.com/cfc4bb86a1.js" crossorigin="anonymous"></script>
-
-
-
-<style>
-* {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
- 
-}
-
-/* Style the body */
-body {
-  font-family: 'Open Sans', sans-serif;
-  color: black
+  <link rel="icon" sizes="150x150" href="./vendor/favicon.png" />
+  <title>Americana Pontos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   
-}
+  <link href="vendor/style.css" rel="stylesheet" type="text/css">
+  <link href="vendor/responsivo.css" rel="stylesheet" type="text/css">
 
+  <script src="https://kit.fontawesome.com/cfc4bb86a1.js" crossorigin="anonymous"></script>
 
-
-
-/* Style the top navigation bar */
-.navbar {
-  
-  background-color: #ffffff;
-  text-align: center;
-  box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
-  height: 150px;
-  padding: 5px;
-}
-
-/* Column container */
-.row {  
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
-
-/* Main column */
-.main {
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
-}
-
-
-.box {
-  background-color: rgb(235, 233, 233);
-  width: 100%;
-  padding: 5px;
-  display: grid;
-  grid-template-columns: 160px 160px 0px;
-  margin-bottom: 250px;
-}
-
-/* Footer */
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-  background-color: #222;
-  color: #fff;
-  font-size: 12px;
- 
-}
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media (max-width: 700px) {
-  .row, .navbar {   
-    flex-direction: column;
-  }
-}
-
-
-.grid-container {
-  display: flex;
-  grid-template-columns: 280px 280px 200px;
-  padding: 0px;
-  align-items:flex-start;
-  margin: 5px;
-  width: 100%;
-  
-}
- 
-.center { text-align:center; }
-
-</style>
 </head>
 <body>
 
   <div class="herotop">
     <div class="herologo">
-      <strong>TEAM 77</strong> 
+      <strong>TEAM 77</strong>
     </div>
 
     <div class="right">
       <nav class="Heronav">
-      <li><strong>Inicio</strong></li>
-      <li></li>
-      <li>Time</li>
-    </nav>
+        
+      </nav>
     </div>
   </div>
 
-
-  <div class="banner">
+  <section>
+    <div class="banner">
       <!-- <h1 class="HeroTitle">Americana Pontos</h1> -->
-      <img src="./vendor/Logo.svg" alt=""/>
+      <img class="logo" src="vendor/Logo.svg" alt="" />
       <h2 class="HeroSub">Loom is the most effective way to get your message across, no matter where you work.</h2>
-  <button class="figma"><i class="fab fa-figma icon"></i>Veja o Prototipo</button>
-  <button class="documentation"><i class="fas fa-book icon"></i> Veja a Documentação</button>
 
-      
-  </div>
-
-
-
-
-<br>
-<br>
-  <div class="team">
-    <h1>Nosso Time</h1>
-    <li class="HeroAvatar"><img src="https://api.adorable.io/avatars/137/abott@adorable.pngC"></li>
-    <li><img src="https://api.adorable.io/avatars/137/abott@adorable.pngC"></li>
-    <li><img src="https://api.adorable.io/avatars/137/abott@adorable.pngC"></li>
-    <li><img src="https://api.adorable.io/avatars/137/abott@adorable.pngC"></li>
-    <li><img src="https://api.adorable.io/avatars/137/abott@adorable.pngC"></li>
-
-  </div>
-
-  <div class="resource">
-    .
-  </div>
+      <button class="figma"><a href="https://www.figma.com/proto/AStXww5HBy6CXGOfojSikx/AMERICAPONTOS?node-id=198%3A2341&scaling=min-zoom" target="blank"><i class="fab fa-figma icon"></i>Veja o Prototipo</a></button>
+      <button class="documentation"><i class="fas fa-book icon"></i> Veja a Documentação</button>
+    </div>
+  </section>
+  <br>
+  <br>
 
 
-
-
-
-<!-- Header
-<div class="header">
-  <img src="./vendor/Logo.svg" alt="" class="logo">
-  <h1 class="textTitle">Apresentando   Americanas Pontos</h1>
-  <h2 class="textSub">Um produto do Universo Americanas</h2>
-
-  
-</div> -->
-
-
-<!-- The flexible grid (content) -->
-<div class="main">
-  
-    <h2 class="center title ">Nossos Produtos</h2>
-
-    <p class="center">
-      Sunt in culpa qui officia deserunt mollit anim id
-      est laborum consectetur adipiscing elit, sed do eiusmod tempor
-      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco.
+  <div class="ads">
+    <h1>Como funciona?</h1>
+    <p>
+      AmericaPontos tem como base auxiliar a plataforma Americanas a fidelizar os clientes atuais e prospectar novos clientes, como? <br>
+      Premiando os clientes mais assíduos por meio de pontos que seriam convertidos em cupons de desconto que poderiam ser utilizados <br>tanto na loja virtual quanto na loja física. Até aqui o sistema é muito similar a outros de bonificação de clientes.<br>
+      O que nos torna únicos? <br> O sistema de gameficação através de desafios.
     </p>
 
+    <img class="mockup" src="./vendor/Mockup.png" class="Mockup">
+ 
+    <button class="youtube"><i class="fab fa-youtube"></i> Saiba Mais</button>
+  </div>
+
+
+<div class="team">
+  <h1>Meu TIME</h1>
+  <div class="members">
+
+    <div class="grid-container">
+      <div class="grid-item">
+        <img src="https://storage.googleapis.com/shawee-production.appspot.com/shawee/profilepictures/b5a67431-98bd-4b4d-9902-2f36b07609fc.jpeg" class="avatar_member">
+        <h2>Rodolfo Brian</h2>
+        <h3><a href="https://www.linkedin.com/in/rodolfo-faioli/"><i class="fab fa-linkedin-in"></i>  DEVELOPER</a></h3>
+      </div>
+      
+      <div class="grid-item">
+        <img src="./vendor/karen_img.jpeg" class="avatar_member">
+        <h2>Karen Wandekochen</h2>
+        <h3><a href="https://www.linkedin.com/in/karen-wandekochen/?originalSubdomain=br"><i class="fab fa-linkedin-in"></i> UI / UX</a></h3>
+      </div>
+
+      <div class="grid-item">
+        <img src="https://storage.googleapis.com/shawee-production.appspot.com/shawee/profilepictures/a2a55784-ddcd-4963-b2db-f1573e3f3a71.jpeg" class="avatar_member">
+        <h2>David Elias</h2>
+        <h3><a href="https://www.linkedin.com/in/david-elias-santos-8a351119a/">
+          <i class="fab fa-linkedin-in"></a></i> DEVELOPER</a></h3>
+      </div>
+
+      <div class="grid-item">
+        <img src="https://api.adorable.io/avatars/201/teste.png" class="avatar_member">
+        <h2>Vinicius</h2>
+        <h3><a href=""><i class="fab fa-linkedin-in"></i> Marketing</a></h3>
+      </div>
+
+      <div class="grid-item ">
+        <img src="https://api.adorable.io/avatars/201/teste.png" class="avatar_member">
+        <h2>Nelson</h2>
+        <h3><a href=""><i class="fab fa-linkedin-in"></i> Developer </a></h3>
+      </div>
     </div>
 
+    
 
-
-
-  <div class="main">
-    <h2 class="center">Nossos Produtos</h2>
-    <h5>Title description, Dec 7, 2017</h5>
-    <div class="row"></div>
-    <div class="box" style="height:450px;">
-
-
-
-<!-- Footer -->
-<div class="footer">
-  Plataforma Desenvolvida Por TIME 77<br>
-  Todos os direitos reservados
-  
 </div>
+ 
+  <!-- Footer -->
+  <div class="footer">
+    Plataforma Desenvolvida Por TIME 77<br>
+    Todos os direitos reservados © 2020 Copyright
+
+  </div>
 
 </body>
 </html>
